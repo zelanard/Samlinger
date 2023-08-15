@@ -1,0 +1,880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C661DDF-3B78-4245-98F1-92A8A0C587DE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MozartsValsGenerator</RootNamespace>
+    <AssemblyName>MozartsValsGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MozartsValsGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M24.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M26.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M27.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M31.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M32.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M33.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M34.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M35.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M36.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M37.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M38.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M39.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M41.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M42.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M43.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M44.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M45.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M46.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M47.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M48.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M49.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M51.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M52.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M53.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M54.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M55.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M56.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M57.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M58.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M59.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M61.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M62.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M63.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M64.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M65.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M66.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M67.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M68.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M69.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M70.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M71.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M72.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M73.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M74.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M75.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M76.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M77.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M78.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M79.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M81.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M82.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M83.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M84.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M85.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M86.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M87.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M88.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M89.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M91.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M92.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M93.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M94.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M95.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M96.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M97.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M98.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M99.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M100.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M101.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M102.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M103.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M104.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M105.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M106.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M107.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M108.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M109.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M110.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M111.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M112.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M113.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M114.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M115.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M116.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M117.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M118.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M119.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M120.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M121.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M122.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M123.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M124.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M125.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M126.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M127.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M128.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M129.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M130.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M131.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M132.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M133.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M134.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M135.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M136.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M137.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M138.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M139.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M140.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M141.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M142.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M143.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M144.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M145.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M146.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M147.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M148.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M149.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M150.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M151.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M152.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M153.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M154.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M155.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M156.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M157.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M158.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M159.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M160.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M161.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M162.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M163.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M164.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M165.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M166.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M167.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M168.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M169.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M170.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M171.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M172.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M173.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M174.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M175.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M176.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T24.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T26.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T27.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T31.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T32.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T33.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T34.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T35.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T36.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T37.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T38.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T39.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T41.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T42.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T43.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T44.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T45.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T46.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T47.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T48.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T49.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T51.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T52.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T53.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T54.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T55.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T56.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T57.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T58.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T59.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T61.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T62.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T63.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T64.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T65.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T66.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T67.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T68.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T69.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T70.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T71.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T72.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T73.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T74.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T75.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T76.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T77.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T78.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T79.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T81.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T82.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T83.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T84.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T85.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T86.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T87.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T88.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T89.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T91.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T92.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T93.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T94.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T95.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T96.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M6.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
