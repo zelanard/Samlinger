@@ -11,20 +11,19 @@ namespace MozartsValsGenerator
     internal class MozartsValsGenerator
     {
         #region view
+        
         /// <summary>
-        /// 
+        /// Play array of SoundPlayers, write count to console.
         /// </summary>
         /// <param name="sound"></param>
         private static void PlayValtz(SoundPlayer[] sound)
         {
             for (int i = 0; i < sound.Length; i++)
             {
+                Console.Write((i+1) + " ");
                 sound[i].PlaySync();
-                Console.Write(i + " ");
             }
         }
-
-        string[,] str = new string[11, 16];
         #endregion
 
         #region model
@@ -51,13 +50,21 @@ namespace MozartsValsGenerator
                 { 83, 3, 28, 53, 37, 17, 44, 70, 63, 85, 32, 96, 12, 23, 50, 91 },
                 { 18, 45, 62, 38, 4, 27, 52, 94, 11, 92, 24, 86, 51, 60, 78, 31 }
         };
+        
+        /// <summary>
+        /// Generate array of SoundPlayer with SoundLocation set and player loaded.
+        /// </summary>
+        /// <param name="minuette"></param>
+        /// <returns></returns>
         private static SoundPlayer[] GetSounds(bool minuette)
         {
             Random rnd = new Random();
-
             SoundPlayer[] min = new SoundPlayer[16];
+
+            //add sound players to min
             for (int i = 0; i < min.Length; i++)
             {
+                //init player and add paths
                 SoundPlayer player = new SoundPlayer();
                 if (minuette)
                 {
@@ -67,8 +74,10 @@ namespace MozartsValsGenerator
                 {
                     player.SoundLocation = $"D:\\Skole\\Source\\Opgaver\\Samlinger\\MozartsValsGenerator\\Resources\\T{partsOfTrio[rnd.Next(0, 6), i]}.wav";
                 }
+                //load the player
                 player.Load();
-
+                
+                //add the player to min
                 min[i] = player;
             }
             return min;
@@ -77,12 +86,17 @@ namespace MozartsValsGenerator
         #endregion
 
         #region controller
+        
+        /// <summary>
+        /// Execute the program.
+        /// </summary>
         private static void ExecuteController()
         {
+            //get lists of sound players
             SoundPlayer[] minuette = GetSounds(true);
             SoundPlayer[] trio = GetSounds(false);
 
-            //Alternativt kunne man have lavet et array af Resources.Filnavn
+            //play sound players
             PlayValtz(minuette);
             Console.WriteLine();
             PlayValtz(trio);
