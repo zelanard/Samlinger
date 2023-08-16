@@ -28,7 +28,7 @@ namespace MozartsValsGenerator
         #endregion
 
         #region model
-        static int[,] partsOfMinuette = new int[11, 16]
+        static byte[,] partsOfMin = new byte[11, 16]
         {
                 { 96, 22, 141, 41, 105, 122, 11, 30, 70, 121, 26, 9, 112, 49, 109, 14 },
                 { 32, 6, 128, 63, 146, 46, 134, 81, 117, 39, 126, 56, 174, 18, 116, 83 },
@@ -42,7 +42,7 @@ namespace MozartsValsGenerator
                 { 3, 87, 165, 61, 135, 47, 147, 33, 102, 4, 31, 164, 144, 59, 173, 78 },
                 { 54, 130, 10, 103, 28, 37, 106, 5, 35, 20, 108, 92, 12, 124, 44, 131 }
         };
-        static int[,] partsOfTrio = new int[6, 16]
+        static byte[,] partsOfTrio = new byte[6, 16]
         {
                 { 72, 6, 59, 25, 81, 41, 89, 13, 36, 5, 46, 79, 30, 95, 19, 66 },
                 { 56, 82, 42, 74, 14, 7, 26, 71, 76, 20, 64, 84, 8, 35, 47, 88 },
@@ -55,9 +55,9 @@ namespace MozartsValsGenerator
         /// <summary>
         /// Generate array of SoundPlayer with SoundLocation set and player loaded.
         /// </summary>
-        /// <param name="minuette"></param>
+        /// <param name="getMin"></param>
         /// <returns></returns>
-        private static SoundPlayer[] GetSounds(bool minuette)
+        private static SoundPlayer[] GetSounds(bool getMin)
         {
             Random rnd = new Random();
             SoundPlayer[] min = new SoundPlayer[16];
@@ -67,9 +67,9 @@ namespace MozartsValsGenerator
             {
                 //init player and add paths
                 SoundPlayer player = new SoundPlayer();
-                if (minuette)
+                if (getMin)
                 {
-                    player.SoundLocation = $"D:\\Skole\\Source\\Opgaver\\Samlinger\\MozartsValsGenerator\\Resources\\M{partsOfMinuette[rnd.Next(1, 7) + rnd.Next(0, 5), i]}.wav";
+                    player.SoundLocation = $"D:\\Skole\\Source\\Opgaver\\Samlinger\\MozartsValsGenerator\\Resources\\M{partsOfMin[rnd.Next(1, 7) + rnd.Next(0, 5), i]}.wav";
                 }
                 else
                 {
@@ -94,11 +94,11 @@ namespace MozartsValsGenerator
         private static void ExecuteController()
         {
             //get lists of sound players
-            SoundPlayer[] minuette = GetSounds(true);
+            SoundPlayer[] minu = GetSounds(true);
             SoundPlayer[] trio = GetSounds(false);
 
             //play sound players
-            PlayValtz(minuette);
+            PlayValtz(minu);
             PlayValtz(trio);
         }
 
