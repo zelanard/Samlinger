@@ -23,6 +23,7 @@ namespace MozartsValsGenerator
                 Console.Write((i+1) + " ");
                 sound[i].PlaySync();
             }
+            Console.WriteLine();
         }
         #endregion
 
@@ -98,7 +99,6 @@ namespace MozartsValsGenerator
 
             //play sound players
             PlayValtz(minuette);
-            Console.WriteLine();
             PlayValtz(trio);
         }
 
